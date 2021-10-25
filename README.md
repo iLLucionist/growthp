@@ -1,14 +1,17 @@
-[![Neovim](https://raw.githubusercontent.com/iLLucionist/growthp/master/docs/growthp_logo.png)](https://neovim.io)
+[![Neovim](https://raw.githubusercontent.com/iLLucionist/growthp/master/docs/growthp_logo.png)](https://github.com/iLLucionist/growthp)
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iLLucionist/growthp/master/LICENSE.txt)
 
-Growth Potential is an algorithm (implemented in R) that can be used to provide recommendations to teams (and other cross sections / nestings, such as job profiles, departments, and so forth) how they may improve themselves and grow on work outcomes they value based on employee survey data:
+Growth Potential is an HR analytics algorithm implemented in R that can be used to recommend teams concrete actions that may help them improve and grown on work outcomes they value based on employee research data.
 
-- Use the organization as their own internal benchmark
-- Compare teams against this benchmark
-- See the growth potentials of teams. Where can they still improve?
-- See which "knobs" (work factors) they can turn to improve work outcomes
-- Get a recommended action list that shows in order which "knobs" to turn.
+- Industry benchmarks have substantial issues (see slidedeck below). Therefore, growth potential leverages the unique value of your organization by calculating an internal benchmark that is tailored specifically to your organization and its unique characteristics.
+- Teams are compared against this internal benchmark. This internal benchmark is realistic and attainable.
+- You can see the growth potential of teams. What is going well and where can teams still improve?
+- See which "knobs" teams may turn to improve important work outcomes.
+- Get a recommended action list for every team that shows which "knobs" (work factors) to turn.
+- Uses multivariate regression to see what works in your organization.
+
+Important: this requires employee survey data, which for every row an employee and columns for independent variables, dependent variables, and nesting data (e.g., teams).
 
 See the [slide deck (pdf)](https://raw.githubusercontent.com/iLLucionist/growthp/master/docs/growth_potential.pdf) for a more detailed explanation.
 
@@ -18,7 +21,7 @@ Just download the repository. You only need the file `growthp.R`, which contains
 
 ## Example
 
-Asessment companies tend to give just your scores, but it doesn't tell you how what you should do with these scores. Growth Potential gives actual recommendations what teams could to to function better and improvee employee well-being (depending on the work outcomes measured in the employee survey):
+Assessment companies tend to give just your scores, but it doesn't tell you how what you should do with these scores. Growth Potential gives actual recommendations what teams could to to function better and improve employee well-being (depending on the work outcomes measured in the employee survey):
 
     Recommendation for:
       The Hot List (#10)
