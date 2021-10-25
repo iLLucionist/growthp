@@ -248,7 +248,7 @@ growthr$model_table = function(model) {
 growthr$weighted_growth = function(growth, ivtable) {
   ivs = unlist(unname(ivtable[1]))
   
-  multiply = setNames(data.frame(t(ivtable$by.iv[,2])),
+  multiply = setNames(data.frame(t(ivtable[,2])),
                       ivtable[,1])
   multiply = do.call(rbind, replicate(nrow(growth), multiply, simplify=FALSE))
   wgrowth = data.frame(nesting=growth$nesting, growth[, ivs] * multiply)
