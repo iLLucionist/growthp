@@ -246,10 +246,10 @@ growthr$model_table = function(model) {
 #
 # Returns: data.frame with all weighed growths for all teams.
 growthr$weighted_growth = function(growth, ivtable) {
-  ivs = unlist(unname(model_tables$by.iv[1]))
+  ivs = unlist(unname(ivtable[1]))
   
-  multiply = setNames(data.frame(t(model_tables$by.iv[,2])),
-                      model_tables$by.iv[,1])
+  multiply = setNames(data.frame(t(ivtable$by.iv[,2])),
+                      ivtable$by.iv[,1])
   multiply = do.call(rbind, replicate(nrow(growth), multiply, simplify=FALSE))
   wgrowth = data.frame(nesting=growth$nesting, growth[, ivs] * multiply)
   return(wgrowth)
