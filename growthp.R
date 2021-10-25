@@ -121,7 +121,7 @@ growthr$growth = function(aggregated, benchmark) {
   # Assign entries that exceed the benchmark the value 0.
   # They do not have growth potential, because they already met or exceeded it.
   decide = function(x, b, f) if(!f) x >= b else !(x >= b)
-  excellent = mapply(decide, data.agg[,-1], benchmark[4, ], benchmark[3, ])
+  excellent = mapply(decide, aggregated[,-1], benchmark[4, ], benchmark[3, ])
   compared = compared * !excellent
   return(data.frame(nesting=aggregated$nesting, compared))
 }
