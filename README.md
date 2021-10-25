@@ -1,7 +1,5 @@
 [![Neovim](https://raw.githubusercontent.com/iLLucionist/growthp/master/docs/growthp_logo.png)](https://github.com/iLLucionist/growthp)
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iLLucionist/growthp/master/LICENSE.txt)
-
 Growth Potential is an HR analytics algorithm implemented in R that can be used to recommend teams concrete actions that may help them improve and grow on work outcomes they value based on employee research data.
 
 - Industry benchmarks have substantial issues (see slide deck below). Therefore, growth potential leverages the unique value of your organization by calculating an internal benchmark that is tailored specifically to your organization and its unique characteristics.
@@ -54,3 +52,5 @@ _Note_. Example has annotations in code.
 - Team name up top
 - You get the scores, the benchmark, and the growth potential for every measured variable for the teams. This team scores relatively high on job satisfaction (7.9) with relatively little room for improvement (0.4), but this team may improve on burnout (growth potential = 1.4)
 - You get a list of recommended actions, in order of the actions that have the most impact across all work outcomes. Here, intrinsic motivation has the most impact on job satisfaction, work engagement, and burnout (38% of all recommended actions). The growth potential for intrinsic motivation is 1.6 - almost two scale points!
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iLLucionist/growthp/master/LICENSE.txt)
